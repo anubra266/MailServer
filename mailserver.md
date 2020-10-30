@@ -508,6 +508,11 @@ Now open up your desktop email client such as Mozilla Thunderbird and add a mail
 Hint: You can also use port 993 with SSL/TLS encryption for IMAP, and use port 465 with SSL/TLS encryption for SMTP.
 ```
 
+If you get Hello reject errors, preceed helo rejects with;
+```
+permit_sasl_authenticated,
+```
+
 To add users;
 ```
 sudo adduser user1
